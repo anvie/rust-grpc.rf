@@ -1,9 +1,9 @@
 Rust gRPC
 ==========
 
-[Reframe](https://github.com/ansvia/reframe) project scaffold for building Rust gRPC application.
+[Reframe](https://github.com/ansvia/reframe) source for building Rust gRPC application.
 
-This code based on [mtp401/protoc-grpcio](https://github.com/mtp401/protoc-grpcio)
+This source based on [mtp401/protoc-grpcio](https://github.com/mtp401/protoc-grpcio)
 
 Demo
 -----
