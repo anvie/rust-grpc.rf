@@ -1,0 +1,37 @@
+[reframe]
+name = "Basic Rust gRPC"
+author = "r@nosql.asia"
+min_version = "0.1.8"
+
+[project]
+name = "MyCoolRustGrpc"
+version = "0.1.0"
+ignore_dirs = [
+  "target",
+  "build"
+]
+ignore_files = [
+  ".packages",
+  "*.iml"
+]
+finish_text = """Usage:
+    $ cd $name_kebab_case$
+
+To run server:
+    $ cargo run --bin server
+
+To run client:
+    $ cargo run --bin client -- [RPC-PORT]
+"""
+
+[[param]]
+desc = { ask = "Description ?", default="My Cool gRPC project" }
+
+[[param]]
+author_name = { ask = "Author name?", default="Hacker" }
+
+[[param]]
+author_email = { ask = "Author email?", default="hacker@mail.com" }
+
+[[param]]
+main_service_name = { ask = "Main service name?", default="store" }

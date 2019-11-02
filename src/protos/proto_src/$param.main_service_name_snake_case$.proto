@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package proto_src;
+
+service $param.main_service_name_pascal_case$ {
+  rpc Request(Order) returns (Result) {}
+}
+
+enum Item {
+  ITEM1 = 0;
+  ITEM2 = 1;
+  ITEM3 = 2;
+}
+
+message Order {
+  repeated Item items = 1;
+}
+
+message Result {
+  double total = 1;
+}

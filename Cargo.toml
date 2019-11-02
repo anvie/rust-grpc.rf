@@ -1,0 +1,26 @@
+[package]
+name = "$name_snake_case$"
+version = "0.1.0"
+authors = ["$param.author_name$ <$param.author_email_lowercase$>"]
+edition = "2018"
+build = "build.rs"
+
+[lib]
+name = "protos"
+path = "src/protos/mod.rs"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[dependencies]
+futures = "0.1.16"
+grpcio = "0.4.3"
+protobuf = "~2"
+
+[build-dependencies]
+protoc-grpcio = "1.0.2"
