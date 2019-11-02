@@ -5,6 +5,11 @@ Rust gRPC
 
 This code based on [mtp401/protoc-grpcio](https://github.com/mtp401/protoc-grpcio)
 
+Demo
+-----
+
+[![asciicast demo](https://asciinema.org/a/278615.svg)](https://asciinema.org/a/278615)
+
 Usage
 ------
 
